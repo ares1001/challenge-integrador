@@ -3,44 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home| Funkoshop</title>
-    <!-- <link href="CSS/styles.css" rel="stylesheet"/> -->
+    <title>Home Funkoshop</title>
+    <link href="CSS/index..css" rel="stylesheet"/>
   </head>
 
   <body>
     <header>
-      <nav>
-        <div id="contenedornav">
-            <div>
-                <picture>
+      <nav class="navbar">
+        <picture class="navbar__logo">
                     <a href="../index.html">
-                    <img id="navpicture"src="../img/branding/isotype.svg" height="60px" width="60px" alt="Logo" />
+                    <img src="./img/branding/logo_light_horizontal.svg"  alt="Logo" />
                     </a>
                 </picture>
-            </div>
-            <ul id="navlist">
-                <li>
-                    <a class="nav-link" href="../pages/shop.html">SHOP</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="../pages/contact.html">CONTACTO</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="../pages/login.html">LOGIN</a>
-                </li>
-            </ul>
-            <picture>
-                <a href="../pages.cart.html">
-                    <img id="cartimg" src="../img/icons/cart-icon.svg" alt="icono del carrito"/>
-                </a>
-            </picture>
             
-        </div>
+            <ul class="navbar__menu">
+                <li class ="navbar__item">
+                    <a class="navbar__link" href="../pages/shop.html">SHOP</a>
+                </li>
+                <li class ="navbar__item">
+                    <a class="navbar__link" href="../pages/contact.html">CONTACTO</a>
+                </li>
+                <li class ="navbar__item"></li>
+                    <a class="navbar__link" href="../pages/login.html">LOGIN</a>
+                </li>
+            
+           <li class="navbar__item">
+                <a class="navbar__cart" href="../pages.cart.html">
+                    <img src="../img/icons/cart-icon.svg" alt="icono del carrito"/>
+                </a>
+              </li>
+          </ul>
+            
+        
       </nav>
     </header>
     <main>
       <section>
-        <img src="../img/funkos-banner.webp" height="388px" width="1440px" alt="banner" />
+       
         <div class="contenedorbanner">
             <div class="bannercontenido">
                 <h1>Nuevos ingresos</h3>
