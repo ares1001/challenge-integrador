@@ -81,40 +81,37 @@ p {
     font-size: 1.8em;
 }
 
-img {
+/* img {
     width: 100%;
-       }
+} */
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
 } 
 
-
-
 /* HEADER */
 
 header {
     background-color:var(--dark-bg-solid);
     padding: var(--spacing-36);
-    
-};
+    }
    
     .navbar {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-   
+        /* align-items: center; */
     }
 
     .navbar__logo{
         max-width: 300px;
     }
+
     .navbar__menu {
         display: flex;
         align-items: center;
         gap: var(--spacing-20);
-    }
+    } 
 
     .navbar__link {
         font-size:var(--font-medium);
@@ -143,16 +140,49 @@ header {
         display: none;
         width: 300px;
         position:absolute;
-        background-color: var(--dark-bg-solid);
-        
+        background-color: var(--dark-bg-solid);   
     }
-
-     .submenu__link{
+     
+    .submenu__link{
         display: block;
         padding:var(--spacing-8) var(--spacing-16) ;
         font-size: var(--font-medium); 
+        transition: background .3s ease-in-out;
     } 
     .submenu__link:hover{
         background-color: var(--primary-900);
-        transition: background .3s ease-in-out;
-    }  
+     }  
+
+     /* Hero */
+/* 
+     .hero{
+        background-image: url(../img/funkos-banner.webp);
+     }
+
+     .hero__content{
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-20);
+        align-items: start;
+    }
+
+    .hero__title{
+        font-family: var(--alternative-font);
+        font-size: var(--font-jumbo);
+        color: var(--light-font-solid);
+    }
+
+    .hero__text{
+        font-family: var(--alternative-font);
+        color: var(--light-font-solid);
+        font-size: var(--font-medium);
+    }
+
+    .hero__link{
+        display: inline-block;
+        font-size: var(--font-medium);
+        background-color: var(--light-bg-solid);
+        padding: var(--spacing-12) var(--spacing-68);
+        border-radius: 50px;
+        font-weight:500 ;
+    } */
