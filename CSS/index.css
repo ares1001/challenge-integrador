@@ -336,8 +336,19 @@ transition: background .3s ease-in-out ;
     font-weight: 700;
 }
 
+/* FOOTER */
 
+.footer {
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-68);
+}
 
+.footer__copy {
+    margin: var(--spacing-36);
+    text-align: center;
+}
+
+/* ANIMATION */
 
 @keyframes fade {
     0%{
