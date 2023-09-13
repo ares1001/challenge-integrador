@@ -39,7 +39,7 @@
 --spacing-68:6.8rem;
 -spacing-36:3.6rem;
 --spacing-28:2.8rem;
--spacing-24: 2.4rem;
+--spacing-24: 2.4rem;
 --spacing-20:2rem;
 --spacing-16:1.6rem;
 --spacing-12:1.2rem;
@@ -109,7 +109,7 @@ img {
 .navbar__menu {
     display: flex;
     align-items: center;
-    gap:var(--spacing-20)
+    gap:var(--spacing-20);
 }
 
 .navbar__link{
@@ -127,7 +127,7 @@ img {
 .with-icon {
     display: flex;
     align-items: center;
-    gap:var(--spacing-8)
+    gap:var(--spacing-8);
 }
 
 .with-submenu:hover .submenu {
@@ -141,15 +141,15 @@ img {
     background-color: var(--dark-bg-solid);
 }
 
-.submenu__link {
+ .submenu__link {
 display: block;
 padding: var(--spacing-8) var(--spacing-16);
-font-size: var(--font-medium)
-}
+font-size: var(--font-medium);
+transition: background .3s ease-in-out ; 
+} 
 
 .submenu__link:hover{
-    background-color: var(--primary-900);
-    transition: background .3s ease-in-out ;
+    background-color: var(--primary-900);    
 }
 
 /* HERO */
@@ -161,9 +161,9 @@ font-size: var(--font-medium)
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-}
+   } 
 
-.hero::before {
+ .hero::before {
     content: '';
     background-color: rgba(0 , 0 , 0 , 0);
     width: 100%;
@@ -171,7 +171,7 @@ font-size: var(--font-medium)
     position: absolute;
     top:0;
     left: 0;
-    backdrop-filter: blur(4px) brightness(.9);
+    backdrop-filter: blur(2px) brightness(.9);
    }
 
 .hero__content {
@@ -179,9 +179,9 @@ font-size: var(--font-medium)
     flex-direction: column;
     gap:var(--spacing-20);
     align-items: start;
-    z-index: 2;
+    z-index:2;
     position: relative;
-}
+}  
 
 .hero__title {
     font-family: var(--alternative-font);
@@ -189,12 +189,11 @@ font-size: var(--font-medium)
     color:var(--light-font-solid)
 }
 
-.hero__text {
+ .hero__text {
     font-family: var(--alternative-font);
     color:var(--light-font-solid);
     font-size: var(--font-medium);
 }
-
 .hero__link {
     display: inline-block;
     font-size: var(--font-medium);
@@ -208,4 +207,53 @@ font-size: var(--font-medium)
 .hero__link:hover {
     background-color: var(--primary-900);
     color:var(--light-font-solid)
+}   
+
+/* COLLECTIONS */
+
+.collection {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    align-items: center; 
+}
+
+.collection:nth-child(2) .collection__cover{
+    order: -1;
+}
+
+.collection__content{
+    display: flex;
+    flex-direction:column;
+    gap:var(--spacing-24);
+    align-items: start;
+}
+
+.collection__title{
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    font-weight: 500;
+}
+
+.collection__text{
+    font-family: var(--alternative-font);
+    font-size: var(--font-large);
+    font-weight: 300;
+    border-bottom: 2px solid var(--primary-solid);
+    padding-bottom: var(--spacing-20);
+}
+
+.collection__link{
+    display: inline-block;
+    font-size: var(--font-medium);
+    background-color:var(--dark-solid);
+    color:var(--light-font-solid);
+    padding: var(--spacing-16) var(--spacing-68);
+    border-radius: 30px; 
+    font-weight: 500; 
+    transition: background .3s ease-in-out;
+} 
+
+.collection__link:hover{
+    background-color: var(--primary-900);
+
 }
