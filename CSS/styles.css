@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 /* body{
     margin: 0%;
     
 }
 
 img{
+=======
+/* img{
+>>>>>>> 8eef5bc01fc1f4563110682e6da22c5788218257
     width: 15rem;
 }
 
@@ -66,4 +70,8 @@ nav{
     display: flex;
     flex-direction: row; 
     align-items: flex-start;
+<<<<<<< HEAD
 } */
+=======
+}  */
+>>>>>>> 8eef5bc01fc1f4563110682e6da22c5788218257
