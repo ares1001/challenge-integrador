@@ -92,7 +92,7 @@ img {
 
 /* SHOP */
 .shop-container{
-    display: flex;
+    display: grid;
     grid-template-columns: 25% 75%;
     margin-top: 10rem;
    
@@ -123,6 +123,12 @@ img {
     font-family: var(--base-font);
     font-weight: var(--dark-500);
     font-size: var(--font-small);
+    
+}
+
+.search__box::-webkit-input-placeholder {
+    padding-left: 1rem;
+    
 }
 
 .search__precio{
@@ -132,6 +138,7 @@ img {
     margin-bottom: 0.2rem;
 }
 .search__checkbox__title{
+    display: inline;
     width: 5.9rem;
     height: 2.7rem;
     border-radius: 0.6rem;
@@ -142,16 +149,15 @@ img {
 
 }
 
-
-
 .search__checkbox {
-    width: 2,4rem;
-    height: 2,4rem;
-    border-color: var(--dark-solid);
+    width: 2.4rem;
+    height: 2.4rem;
+    border-color:2px ;
     font-family: var(--base-font);
-    border: 0.1rem var(--dark-solid);
-    
+    border : 0.1rem var(--dark-solid);
+    border-radius: 10px;
 }
+
 
 
 .shop-section {
@@ -175,8 +181,10 @@ img {
 
 .shop__items {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns:  1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    align-items: stretch;
+    padding: 2rem;
 }
 
 .shop-item__nuevo{
@@ -198,11 +206,6 @@ img {
 
 }
 
-
-
-
-
-
 .shop-item__content{
     display: flex;
     flex-direction: column;
@@ -212,7 +215,7 @@ img {
 
 .shop-item__license {
     font-size: var(--font-xsmall);
-    font-weight: 500;
+    font-weight:var(--dark-500);
 }
 
 .shop-item__name {
@@ -245,7 +248,7 @@ img {
     font-size: var(--font-xsmall);
     padding: 8px 16px;
     transition: background-color .3s;
-    border: 2px var(--dark-solid);
+    border: 1px solid var(--primary-solid);
     margin: 4px 4px;
   }
   
