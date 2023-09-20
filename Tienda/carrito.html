@@ -50,10 +50,11 @@
 <body>
 
   <main>
-    <div>
-      <h1 class="cart__title">CARRITO DE COMPRAS</h1>
-    </div>
-    <section>
+   
+    <section class="section-container">
+      <div>
+        <h1 class="cart__title">CARRITO DE COMPRAS</h1>
+      </div>
       <ul class="cart__submenu">
         <li>DETALLE DEL PRODUCTO </li>
         <li>CANTIDAD</li>
@@ -61,49 +62,55 @@
       </ul>
 
       <div class="cart__container">
-
-        <img src="../img/star-wars/baby-yoda-1.webp" alt="Baby">
-        <span>
-          <h3>BABY YODA BLUEBALL</h3>
-          <p>STAR WARS</p>
-          <p>precio 1799,99</p>
-        </span>
-
-        <input type="number" />
-        <img src="../img/icons/x-solid.svg" height="10px" width="10px" alt="x" />
-
-        <img src="../img/pokemon/pidgeotto-1.webp" alt="Pidge">
-        <span>
-          <h3>PIDGEOTTO</h3>
-          <p>HARRY POTTER</p>
-          <p>precio 1799,99</p>
-        </span>
-        <input type="number" />
-        <img src="../img/icons/x-solid.svg" height="10px" width="10px" alt="x" />
-
+         <div class="item__card">
+          <div>
+          <img class="item__img" src="../img/star-wars/baby-yoda-1.webp" alt="Baby">
+          <div class="item__details">
+            <p class="item__name pt-5">BABY YODA BLUEBALL</p>
+            <p class="item__license pt-5">STAR WARS</p>
+            <p class="item__price pt-5">precio $ 1799,99</p>
+            </div>
+        </div>
+          
       </div>
+      <input class="card__input" type="number" />
+        <p class="card__price">$3599,98</p>
+        <img src="../img/icons/x-solid.svg" height="10px" width="10px" alt="x" />
+           </div>
+
+           <div class="cart__container">
+            <div class="item__card">
+             <div>
+             <img class="item__img" src="../img/pokemon/pidgeotto-1.webp" alt="Baby">
+             <div class="item__details">
+               <p class="item__name pt-5">PIDGEOTTO</p>
+               <p class="item__license pt-5">POKEMON</p>
+               <p class="item__price pt-5">precio $ 1799,99</p>
+               </div>
+           </div>
+             
+         </div>
+         <input class="card__input" type="number" />
+           <p class="card__price">$3599,98</p>
+           <img src="../img/icons/x-solid.svg" height="10px" width="10px" alt="x" />
+              </div>
+      
+
       <div>
-        <h1>RESUMEN</h3>
-      </div>
-
-
-
-
-
-      </div>
+        <h1 class="cart__title-resume">RESUMEN</h1>
       </div>
 
     </section>
     <div>
-      <ul>
-        <li> Cantidad de elementos</li>
-        <li>3</li>
-        <li>Subtotal</li>
-        <li>5399,97</li>
-        <li>envio</li>
-        <li>0</li>
-        <li>Total</li>
-        <li>5399,97</li>
+      <ul class="resume-container">
+        <li class="resume__list"> Cantidad de elementos</li>
+        <li class="resume__numbers">3</li>
+        <li class="resume__list">Subtotal</li>
+        <li class="resume__numbers">5399,97</li>
+        <li class="resume__list">envio</li>
+        <li class="resume__numbers">0</li>
+        <li class="resume__list-total">Total</li>
+        <li class="resume__numbers">5399,97</li>
       </ul>
 
 
