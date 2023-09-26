@@ -6,7 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE-Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Product List Funkoshop</title>
+  
+  
   <link href="../CSS/index.css" rel="stylesheet" />
+  <link href="../CSS/product-list.css" rel="stylesheet"/>
 </head>
 <body>
 <header>
@@ -45,14 +48,18 @@
     </ul>
   </nav>
 </header>
-    
-        <div class="topnav">
-            <input type="text" placeholder="Search..">
-          <img src="../img/icons/magnifying-glass-solid.svg" width="20px" height="20px" alt="lupa"/>
-          </div>
+ <div class="search__container">
 <div>
-          <h2>LISTADO DE PRODUCTOS</h2>
-          <h3>AGREGAR</h3>
+  <img class="product__list-logo" src="../img/icons/magnifying-glass-solid.svg" width="20px" height="20px" alt="lupa"/>
+ </div>
+        <div class="product__list-search">
+            <input type="text" placeholder="codigo,nombre o categoria">
+          
+          </div>
+        </div>
+<div class="product__list-title">
+          <p class="list__title">LISTADO DE PRODUCTOS</p>
+          <p class="list__add">AGREGAR</p>
           <img src="../img/icons/plus-solid.svg" width="20px" height="20px" alt="suma"/>
 </div>
           <table>

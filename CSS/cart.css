@@ -255,3 +255,21 @@ padding: 40px;
     font-size: var(--font-xsmall);
     font-weight: 400;
 }
+
+.resume__pay{
+    display: flex;
+    flex-wrap: wrap;
+    width: 57rem;
+    height: 6.9rem;
+    background-color: var(--primary-solid);
+    font-family:var(--base-font) ;
+    font-size: var(--font-xlarge);
+    font-weight: 700;
+    color:var(--light-font-solid);
+    text-align: center;
+    margin-left: 63rem;
+    padding-left: 15rem;
+    align-content: center;
+    
+
+}
