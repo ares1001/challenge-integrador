@@ -9,45 +9,45 @@
   <link href="../CSS/index.css" rel="stylesheet" />
 
 </head>
-<header>
-  <nav class="navbar container">
-    <picture class="navbar__logo">
-      <a href="../index.html">
-        <img src="../img/branding/logo_light_horizontal.svg" alt="Logo" />
-      </a>
-    </picture>
-    <ul class="navbar__menu">
-      <li class="navbar__item with-submenu">
-        <a class="navbar__link with-icon" href="../Tienda/shop.html">SHOP
-          <iconify-icon="system-uicons:chevron-down"></iconify-icon></a>
-        <ul class="submenu">
-          <li class="submenu__item">
-            <a href="" class="submenu__link">Funkos</a>
-          </li>
-          <li class="submenu__item">
-            <a href="" class="submenu__link">Remera</a>
-          </li>
-          <li class="submenu__item">
-            <a href="" class="submenu__link">Llaveros</a>
-          </li>
-        </ul>
-      </li>
-      <li class="navbar__item">
-        <a class="navbar__link" href="./Tienda/">CONTACTO</a>
-      </li>
-      <li class="navbar__item">
-        <a class="navbar__link" href="../Admin/login.html">LOGIN</a>
-      </li>
-      <li class="navbar__item">
-        <a class="navbar__cart" href="../Tienda/carrito.html">
-          <img src="../img/icons/cart-icon.svg" alt="carrito">
-        </a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
 <body>
+
+  <header>
+    <nav class="navbar container">
+      <picture class="navbar__logo">
+        <a href="../index.html">
+          <img src="../img/branding/logo_light_horizontal.svg" alt="Logo" />
+        </a>
+      </picture>
+      <ul class="navbar__menu">
+        <li class="navbar__item with-submenu">
+          <a class="navbar__link with-icon" href="./shop.html">SHOP <iconify-icon
+            icon="system-uicons:chevron-down"></iconify-icon></a>
+          <ul class="submenu">
+            <li class="submenu__item">
+              <a href="./shop.html" class="submenu__link">Funkos</a>
+            </li>
+            <li class="submenu__item">
+              <a href="./shop.html" class="submenu__link">Remeras</a>
+            </li>
+            <li class="submenu__item">
+              <a href="./shop.html" class="submenu__link">Llaveros</a>
+            </li>
+          </ul>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="./contacto.html">CONTACTO</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="../Admin/login.html">LOGIN</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__cart" href="./carrito.html">
+            <img src="../img/icons/cart-icon.svg" alt="carrito">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
    
@@ -56,7 +56,7 @@
         <h1 class="cart__title">CARRITO DE COMPRAS</h1>
       </div>
       <ul class="cart__submenu">
-        <li>DETALLE DEL PRODUCTO </li>
+        <li>DETALLE DE PRODUCTO</li>
         <li>CANTIDAD</li>
         <li>TOTAL</li>
       </ul>
@@ -68,13 +68,13 @@
           <div class="item__details">
             <p class="item__name pt-5">BABY YODA BLUEBALL</p>
             <p class="item__license pt-5">STAR WARS</p>
-            <p class="item__price pt-5">precio $ 1799,99</p>
+            <p class="item__price pt-5">precio: $ 1799,99</p>
             </div>
         </div>
           
       </div>
-      <input class="card__input" type="number" />
-        <p class="card__price">$3599,98</p>
+      <input class="card__input" type="number" placeholder="2"/>
+        <p class="card__price">$ 3599,98</p>
         <img src="../img/icons/x-solid.svg" height="10px" width="10px" alt="x" />
            </div>
 
@@ -85,13 +85,13 @@
              <div class="item__details">
                <p class="item__name pt-5">PIDGEOTTO</p>
                <p class="item__license pt-5">POKEMON</p>
-               <p class="item__price pt-5">precio $ 1799,99</p>
+               <p class="item__price pt-5">Precio unitario: $ 1799,99</p>
                </div>
            </div>
              
          </div>
-         <input class="card__input" type="number" />
-           <p class="card__price">$3599,98</p>
+         <input class="card__input" type="number" placeholder="1"/>
+           <p class="card__price">$ 1799,99</p>
            <img src="../img/icons/x-solid.svg" height="10px" width="10px" alt="x" />
               </div>
       
@@ -103,14 +103,14 @@
     </section>
     <div>
       <ul class="resume-container">
-        <li class="resume__list"> Cantidad de elementos</li>
+        <li class="resume__list">CANTIDAD DE ELEMENTOS</li>
         <li class="resume__numbers">3</li>
-        <li class="resume__list">Subtotal</li>
-        <li class="resume__numbers">5399,97</li>
-        <li class="resume__list">envio</li>
-        <li class="resume__numbers">0</li>
-        <li class="resume__list-total">Total</li>
-        <li class="resume__numbers">5399,97</li>
+        <li class="resume__list">SUBTOTAL</li>
+        <li class="resume__numbers">$ 5.399,97</li>
+        <li class="resume__list">ENVÍO</li>
+        <li class="resume__numbers">$ 0,00</li>
+        <li class="resume__list-total">TOTAL</li>
+        <li class="resume__numbers">$ 5.399,97</li>
       </ul>
 
 
@@ -121,28 +121,28 @@
 </div>
 
   </main>
+
   <footer class="footer">
     <nav class="navbar container">
       <ul class="navbar__item">
         <li class="navbar__item">
-          <a class="navbar__link" href="../challenge-integrador/Tienda/shop.html">SHOP</a>
+          <a class="navbar__link" href="./shop.html">SHOP</a>
         </li>
         <li class="navbar__item">
-          <a class="navbar__link" href="../challenge-integrador/Admin/register.html">REGISTRATION</a>
+          <a class="navbar__link" href="../Admin/login.html">INGRESAR</a>
         </li>
         <li class="navbar__item">
-          <a class="navbar__link" href="../challenge-integrador/Admin/login.html">LOGIN</a>
-        </li>
-        <li class="navbar__item">
-          <a class="navbar__link" href="../challenge-integrador/Admin/">CONTACTO</a>
+          <a class="navbar__link" href="./contacto.html">CONTACTO</a>
         </li>
       </ul>
-      <picture>
+      <a href="../index.html">
         <img src="../img/branding/isotype.svg" alt="logo">
-      </picture>
+      </a>
     </nav>
     <p class="footer__copy">All rights reserved 2023 - Funkoshop</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 
 </html>
