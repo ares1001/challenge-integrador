@@ -8,81 +8,85 @@
   <title>Create Funkoshop</title>
   <link href="../CSS/index.css" rel="stylesheet" />
 </head>
-<header>
-  <nav class="navbar container">
-    <picture class="navbar__logo">
-      <a href="../index.html">
-        <img src="../img/branding/logo_light_horizontal.svg" alt="Logo" />
-      </a>
-    </picture>
-    <ul class="navbar__menu">
-      <li class="navbar__item with-submenu">
-        <a class="navbar__link with-icon" href="./Tienda/shop.html">SHOP <iconify-icon="system-uicons:chevron-down"></iconify-icon></a>
-        <ul class="submenu">
-          <li class="submenu__item">
-            <a href="" class="submenu__link">Funkos</a>
-          </li>
-          <li class="submenu__item">
-            <a href="" class="submenu__link">Remera</a>
-          </li>
-          <li class="submenu__item">
-            <a href="" class="submenu__link">Llaveros</a>
-          </li>
-        </ul>
-      </li>
-      <li class="navbar__item">
-        <a class="navbar__link" href="../Tienda/">CONTACTO</a>
-      </li>
-      <li class="navbar__item">
-        <a class="navbar__link" href="../challenge-integrador/Admin/login.html">LOGIN</a>
-      </li>
-      <li class="navbar__item">
-        <a class="navbar__cart" href="../Tienda/carrito.html">
-          <img src="../img/icons/cart-icon.svg" alt="carrito">
-        </a>
-      </li>
-    </ul>
-  </nav>
-</header>
-<body>
-    <h1>CREAR NUEVO ITEM</h1>
-    <p>Categoria</p> 
-    <p>Licencia</p>
-    <p>Nombre del producto</p>
-    <input type="text">
-    <p>SKU</p>
-    <p>Precio</p>
-    <p>Stock</p>
-    <p>Descuento</p>
-    <input type="number" name="cuotas">
-    <p>imagenes</p>
-    <p>No se ha seleccionado ningun archivo</p>
-    <button>Agregar Producto</button>
-    <button>Limpiar</button>
 
-</body>
-<footer class="footer">
+<body>
+
+  <header>
+    <nav class="navbar container">
+      <picture class="navbar__logo">
+        <a href="../index.html">
+          <img src="../img/branding/logo_light_horizontal.svg" alt="Logo" />
+        </a>
+      </picture>
+      <ul class="navbar__menu">
+        <li class="navbar__item with-submenu">
+          <a class="navbar__link with-icon" href="../Tienda/shop.html">VER TIENDA <iconify-icon
+            icon="system-uicons:chevron-down"></iconify-icon></a>
+          <ul class="submenu">
+            <li class="submenu__item">
+              <a href="../Tienda/shop.html" class="submenu__link">Funkos</a>
+            </li>
+            <li class="submenu__item">
+              <a href="../Tienda/shop.html" class="submenu__link">Remeras</a>
+            </li>
+            <li class="submenu__item">
+              <a href="../Tienda/shop.html" class="submenu__link">Llaveros</a>
+            </li>
+          </ul>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="./login.html">ADMIN</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="./login.html">SALIR</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+      <h1>CREAR NUEVO ITEM</h1>
+      <p>Categoria</p> 
+      <p>Licencia</p>
+      <p>Nombre del producto</p>
+      <input type="text">
+      <p>SKU</p>
+      <p>Precio</p>
+      <p>Stock</p>
+      <p>Descuento</p>
+      <input type="number" name="cuotas">
+      <p>imagenes</p>
+      <p>No se ha seleccionado ningun archivo</p>
+      <button>Agregar Producto</button>
+      <button>Limpiar</button>
+
+  </main>
+
+  <footer class="footer">
     <nav class="navbar container">
       <ul class="navbar__item">
         <li class="navbar__item">
           <a class="navbar__link" href="../Tienda/shop.html">SHOP</a>
         </li>
         <li class="navbar__item">
-          <a class="navbar__link" href="../Admin/register.html">REGISTRATION</a>
+          <a class="navbar__link" href="./register.html">REGISTRARSE</a>
         </li>
         <li class="navbar__item">
-          <a class="navbar__link" href="../Admin/login.html">LOGIN</a>
+          <a class="navbar__link" href="./login.html">INGRESAR</a>
         </li>
         <li class="navbar__item">
-          <a class="navbar__link" href="../Admin/">CONTACTO</a>
+          <a class="navbar__link" href="../Tienda/contacto.html">CONTACTO</a>
         </li>
       </ul>
-      <picture>
+      <a href="../index.html">
         <img src="../img/branding/isotype.svg" alt="logo">
-      </picture>
+      </a>
     </nav>
     <p class="footer__copy">All rights reserved 2023 - Funkoshop</p>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+
 </body>
+
 </html>
