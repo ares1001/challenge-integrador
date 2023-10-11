@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ítem | Funkoshop</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css"> -->
     <link href="../CSS/index.css" rel="stylesheet" />
     <link href="../CSS/item.css" rel="stylesheet" />
   </head>
@@ -57,14 +57,16 @@
         </div>
         <div class="item_content">
           <div>
-            <h4 class="item_subtitle">STAR WARS</h4>
+            <p class="item_subtitle">STAR WARS</p>
             <h3 class="item_title">BABY YODA BLUEBALL</h3>
             <p class="item_text">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
             <p class="item_precio">$ 1799,99</p>
           </div>
-          <div class="item_input">
-            <input class="item_cantidad" type="number" placeholder="0">
-            <button class="item_button" type="submit">Agregar al Carrito</button>
+          <div class="item__input">
+            <button id="subtract" class="item__quantity" type="button">-</button>
+            <input class="item_cantidad" type="text" name="quantity" id="quantity" placeholder="0">
+            <button id="add" class="item__quantity" type="button">+</button>
+            <button class="item__submit btn btn--primary btn--medium" type="submit">Agregar al carrito</button>
           </div>
           <div class="item_cuotas">
             <a class="item_link" href="#">Ver métodos de pago</a> - 3 CUOTAS SIN INTERÉS
@@ -160,7 +162,9 @@
   
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script>
+    <script src="../js/item.js"></script>
+    <script src="../js/glide.js"></script>
+    <!-- <script>
       new Glide('.glide', {
         type:'carousel',
         startAt: 0,
@@ -176,6 +180,6 @@
         }
   
       }).mount();
-    </script>
+    </script> -->
   </body>
 </html>
