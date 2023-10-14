@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Create Funkoshop</title>
   <link href="../CSS/index.css" rel="stylesheet" />
+  <link href="../CSS/create.css" rel="stylesheet" >
 </head>
 
 <body>
@@ -45,23 +46,70 @@
   </header>
 
   <main>
-      <h1>CREAR NUEVO ITEM</h1>
-      <p>Categoria</p> 
-      <p>Licencia</p>
-      <p>Nombre del producto</p>
-      <input type="text">
-      <p>SKU</p>
-      <p>Precio</p>
-      <p>Stock</p>
-      <p>Descuento</p>
-      <input type="number" name="cuotas">
-      <p>imagenes</p>
-      <p>No se ha seleccionado ningun archivo</p>
-      <button>Elegir archivos</button>
-      <p>Frente</p>
-      <p>Dorso</p>
-      <button>Modificar Producto</button>
-
+    <section class="create-container">
+      <div class="create-title">
+        <h1>CREAR NUEVO ITEM</h1>
+      </div>
+      <div class="create-categoria">
+        <span>
+          <p>Categoría: </p>
+        </span>
+        <span>
+          <select name="select">
+            <option value="value1" selected>Seleccionar</option>
+            <option value="value2">Value 2</option>
+            <option value="value3">Value 3</option>
+          </select>
+        </span>
+        <span>
+          <p>Licencia: </p>
+        </span>
+        <span>
+          <select name="select">
+            <option value="value1" selected>Seleccionar</option>
+            <option value="value2">Value 2</option>
+            <option value="value3">Value 3</option>
+          </select>
+        </span>
+      </div>
+      <div class="create-nombre">
+        <p>Nombre del producto: </p>
+        <input type="text" class="input-name" placeholder="Kakashi Hatake Shippuden Saga">
+      </div>
+      <div class="create-descripcion">
+        <textarea id="desc" name="desc" rows="5" cols="90"> Descripción del producto</textarea>
+      </div>
+      <div class="create-info">
+        <p>SKU:</p>
+        <input type="text" class="input-info" placeholder="SSK111AB001">
+        <p>Precio:</p>
+        <input type="text" class="input-info" placeholder="  $ 0.000,00">
+        <p>Stock:</p>
+        <input type="text" class="input-info" placeholder="           0">
+      </div>
+      <div class="create-cuotas">
+        <p>Descuento:</p>
+        <input type="number" class="input-cuotas" placeholder="  0%">
+        <span>
+          <p>Cuotas: </p>
+        </span>
+        <span>
+          <select name="select" class="select-cuotas">
+            <option value="value1" selected>3 Cuotas sin interés</option>
+            <option value="value2">Value 2</option>
+            <option value="value3">Value 3</option>
+          </select>
+        </span>
+      </div>
+      <div class="create-img">
+        <p>Imágenes: </p>
+        <input type="file" name="archivosubido">
+      </div>
+      <div class="create-btn">
+        <button>Agregar Producto</button>
+        <button>Limpiar</button>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
