@@ -1,5 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
 
+:root {
+    /* Palette  */
+    --primary-solid:#FF3333;
+    --primary-900:rgb(255, 51, 51, 0.9);
+    --primary-500:rgb(255, 51, 51, 0.5);
+    --primary-300:rgb(255, 51, 51, 0.3);
+    
+    --secondary-solid:#1d84b5;
+    --secondary-900: rgb(29, 132, 181, 0.9);
+    --secondary-500: rgb(29, 132, 181, 0.5);
+    --secondary-300: rgb(29, 132, 181, 0.3);
+    
+    --dark-solid:#1f1f1f;
+    --dark-900: rgb(31, 31, 31, 0.9);
+    --dark-500:rgb(31, 31, 31, 0.5);
+    --dark-300:rgb(31, 31, 31, 0.3);
+    
+    --dark-bg-solid: #30343f;
+    --light-bg-solid:#fafaff;
+    --light-font-solid:#ffffff;
+    
+    /* Tipography */
+    --base-font:'Inter', sans serif;
+    --alternative-font:'Raleway', sans serif;
+    
+    /* Font-sizes */
+    --font-display:4.8em;
+    --font-jumbo:3.8em;
+    --font-xlarge:3em;
+    --font-large:2.4em;
+    --font-medium:1.8em;
+    --font-small:1.6em;
+    --font-xsmall:1.4em;
+    
+    /* Spacings */
+    --spacing-128: 12.8rem;
+    --spacing-68:6.8rem;
+    --spacing-36:3.6rem;
+    --spacing-28:2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20:2rem;
+    --spacing-16:1.6rem;
+    --spacing-12:1.2rem;
+    --spacing-8:0.8rem;
+    }
 .item_container {
     display: grid;
     grid-template-columns: repeat(2 , 1fr);
@@ -58,23 +103,41 @@
 }
 
 .item_cantidad {
-    width: 6rem;
-    height: 2rem;
+    width: 10.5rem;
+    height: 3.5rem;
     font-family: Inter;
-    color: #747474;
+    font-weight: 700;
+    color:var(--dark-bg-solid);
     text-align: center;
+    margin-left: 1rem;
+    border:0.5px solid grey
 }
 
-.item_button {
-    width: 11rem;
-    height: 2rem;
-    background-color: #FF3333;
+
+
+.item__quantity {
+    width: 2rem;
+    height:2rem;
+    background-color:var(--dark-bg-solid);
     border: transparent;
     font-family: Inter;
     color: #FFFFFF;
-    font-size: 1.125rem;
+    font-size: var(--font-xsmall);
     font-weight: normal;
     margin-left: 1rem;
+   
+}
+
+.item__submit{
+    width: 18rem;
+    height: 3.8rem;
+    background-color: var(--primary-solid);
+    color:var(--light-bg-solid);
+    border-color: transparent;
+    font-size:var(--font-medium);
+    font-family: var(--base-font);
+    font-weight: 400;
+    margin-left: 2rem;
 }
 
 .item_button:hover {
