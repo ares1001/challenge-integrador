@@ -7,8 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Register Funkoshop</title>
   <link href="../CSS/index.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../CSS/register-styles/register.css">
 </head>
 <body>
+    <!--Inicio de la cabecera de la pagina-->
 <header>
   <nav class="navbar container">
     <picture class="navbar__logo">
@@ -45,24 +47,44 @@
     </ul>
   </nav>
 </header>
+<!--Fin de la cabecera de la pagina-->
+<!--Inicio del cuerpo de la pagina-->
 <main>
-
-    <h1>Crea tu cuenta</h1>
-    
+  <div class="formulario">
+    <h1>CREA TU CUENTA</h1>
     <p>Completa el formulario para ser parte del mundo de los Funkos</p>
-<ul>
-    <li>Nombre</li>
-    <li>Apellidp</li>
-    <li>Email</li>
-    <li>Contraseña</li>
-    <li>Repita Contraseña</li>
-</ul>
-<button>Regristrese</button>
-<input type="checkbox" name="Acepto" >
+    <div class="input-group">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+    </div>
+    <div class="input-group">
+      <label for="apellido">Apellido</label>
+      <input type="text" id="apellido" name="apellido" placeholder="Tu apellido">
+    </div>
+    <div class="input-group">
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" placeholder="Tu correo electrónico">
+    </div>
+    <div class="input-group">
+      <label for="contrasena">Contraseña</label>
+      <input type="password" id="contrasena" name="contrasena" placeholder="Tu contraseña">
+    </div>
+    <div class="input-group">
+      <label for="repetir-contrasena">Repetir contraseña</label>
+      <input type="password" id="repetir-contrasena" name="repetir-contrasena" placeholder="Repetir tu contraseña">
+    </div>
+    <div class="input-group">
+      <input type="checkbox" id="terminos-condiciones" name="terminos-condiciones">
+      <label for="terminos-condiciones">Acepto los términos y condiciones</label>
+    </div>
+    <input type="submit" value="Registrar">
+  </div>
+  
 </main>
+<!--Fin del cuerpo de la pagina-->
 
     
-
+<!--Inicio del footer de la pagina-->
 <footer class="footer">
     <nav class="navbar container">
       <ul class="navbar__item">
@@ -85,6 +107,7 @@
     </nav>
     <p class="footer__copy">All rights reserved 2023 - Funkoshop</p>
   </footer>
+  <!--Fin de el footer de la pagina-->
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 </html>
