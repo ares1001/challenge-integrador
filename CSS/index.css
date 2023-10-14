@@ -25,8 +25,8 @@
 --light-font-solid:#ffffff;
 
 /* Tipography */
---base-font:'Inter', sans serif;
---alternative-font:'Raleway', sans serif;
+--base-font:'Inter', 'sans serif';
+--alternative-font:'Raleway', 'sans serif';
 
 /* Font-sizes */
 --font-display:4.8em;
